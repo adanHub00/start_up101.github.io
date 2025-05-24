@@ -295,5 +295,15 @@ html, body {
         padding: 1rem 0.3rem;
     }
 }
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+    }
+}
+@media (max-width: 480px) {
+    .sidebar {
+        width: 40px;
+    }
+}
 
  
