@@ -1,0 +1,299 @@
+h1, h2, h3, h4 {
+    font-family: 'MOntserrat', sans-serif;
+}
+html, body {
+    height: auto; 
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #D3D3D3;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222222;
+    overflow-x: hidden;
+    min-height: 56vh;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding-top: 45px;
+}
+.sidebar a {
+    float: left;
+    width: 100%;
+    text-decoration: none;
+    padding: 18px 24px;
+    text-align: center;
+    color: #D3D3D3;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+.sidebar a:hover {
+    color: #a0d7b8;
+    
+}
+/* Main Section */
+#welcome-section, #home, #projects {
+    margin-left: 200px;
+    padding: 2rem 1rem;
+}
+/* Welcome Section */
+#welcome-section {
+    
+    margin-left: 200px;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+    background: #111111;
+
+}
+.welcome-img {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    min-width: 0;
+    background-image: url('https://adan493.wordpress.com/wp-content/uploads/2025/05/1747547545128.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #000;
+}
+@media (max-width: 900px) {
+    .welcome-img {
+        margin-left: 0;
+        min-height: 50vh;
+        padding: 1rem;
+    }
+}
+.welcome-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+.welcome-text {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: #D3D3D3;
+    background: #0744799e;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 2rem 1rem;
+    max-width: 100%;
+}
+.welcome-text form {
+    margin-top: 1.5rem;
+    display: block;
+    position: relative;
+    gap: 0.8rem;
+    z-index: 10;
+    align-items: center;
+    pointer-events: auto;
+}
+.welcome-text input[type="email"] {
+    width: 70%;
+    max-width: 320px;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+    text-decoration: italic;
+    border: 1.5px solid #008000;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    background-color: #a0d7b8;
+    font-style: italic;
+    color: #555555;
+    
+}
+.welcome-text button.btn {
+    width: 50%;
+    max-width: 115px;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .welcome-text {
+        font-size: 1.2rem;
+        padding: 1rem 0.5rem;
+    }
+    .welcome-text input[type="email"], .welcome-text button.btn {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+}
+.welcome-text input, .welcome-text button {
+    z-index: 10;
+    pointer-events: auto;
+}
+.btn {
+    background-color: #a0d7b8;
+    color: #222222;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: #008000;
+    color: #000000;
+}
+.btn:active {
+    background-color: #008000;
+}
+.project-img .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.project-img img {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+}
+@media (max-width: 1000px) {
+    .project-img .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .project-img img {
+        width: 240px;
+        height: 240px;
+    }
+}
+@media (max-width: 600px) {
+    .project-img .container {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .project-img img {
+        width: 90vw;
+        max-width: 340px;
+        height: 180px;
+    }
+}
+#projects h2 {
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: calc(100vw - 200px);
+    min-height: 100vh;
+    z-index: 10;
+    padding-top: 60px;
+    
+}
+.extended-title {
+    font-size: 2rem;
+    color: #242424;
+    text-align: center;
+    letter-spacing: 1.2rem;
+    margin: 30px 0 20px 0;
+}
+/* Home Section */
+#home {
+    margin-left: 200px;
+    margin-top: 0;
+    padding: 2rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+#home .container {
+    flex: 1 1 50%;
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    margin: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+}
+#home p {
+    margin-bottom: 1.2em;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+#home h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+/* Responsive Styles */
+@media (max-width: 1100px) {
+    #welcome-section, #home {
+        margin-left: 60px;
+    }
+}
+@media (max-width: 900px) {
+    #welcome-section {
+       flex-direction: column;
+       min-height: unset;
+    }
+    .welcome-img, .welcome-text {
+        min-height: 50vh;
+        width: 100%;
+        max-width: 100vw;
+    }
+    .welcome-text {
+        padding: 2rem 1rem;
+        font-size: 1.3rem;
+    }
+    #home {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 0.5rem;
+    }
+    #home .container {
+        padding: 1.2rem 0.8rem;
+    }
+}
+@media (max-width: 600px) {
+    #welcome-section, #home {
+        margin-left: 0;
+        padding: 0;
+    }
+    .welcome-img, .welcome-text {
+        min-height: 40vh;
+        padding: 1rem 0.5rem;
+    }
+    .welcome-text {
+        font-size: 1rem;
+    }
+    #home .container {
+        padding: 1rem 0.3rem;
+    }
+}
+
+ 
