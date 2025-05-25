@@ -82,6 +82,13 @@ html, body {
         padding: 1rem;
     }
 }
+@media (max-width: 720px) {
+    .welcome-img {
+        margin-left: 0;
+        min-height: 50vh;
+        padding: 1rem;
+    }
+}
 .welcome-img::before {
     content: "";
     position: absolute;
@@ -137,7 +144,7 @@ html, body {
     font-size: 1.1rem;
     cursor: pointer;
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     .welcome-text {
         font-size: 1.2rem;
         padding: 1rem 0.5rem;
@@ -193,7 +200,7 @@ html, body {
         height: 240px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     .project-img .container {
         grid-template-columns: 1fr;
         gap: 14px;
@@ -283,7 +290,7 @@ html, body {
         padding: 1.2rem 0.8rem;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     #welcome-section, #home {
         margin-left: 0;
         padding: 0;
@@ -299,7 +306,7 @@ html, body {
         padding: 1rem 0.3rem;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 720px) {
     .hamburger {
         display: block;
         position: fixed;
@@ -334,7 +341,7 @@ html, body {
         display: none;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     .sidebar {
         width: 60px;
     }
