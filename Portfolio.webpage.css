@@ -1,5 +1,5 @@
 h1, h2, h3, h4 {
-    font-family: 'MOntserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 html, body {
     height: auto; 
@@ -7,6 +7,10 @@ html, body {
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #D3D3D3;
+}
+/* Hide Hamburger by Default, show on Mobile */
+.hamburger, .menu-toggle {
+    display: none;
 }
 .sidebar {
     display: flex;
@@ -179,6 +183,9 @@ html, body {
     border-radius: 14px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.6);
 }
+@media (max-width: 800px) {
+    .hamburger {
+        display: block;
 @media (max-width: 1000px) {
     .project-img .container {
         grid-template-columns: repeat(2, 1fr);
