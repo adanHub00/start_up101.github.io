@@ -298,7 +298,8 @@ html, body {
 }
 @media (max-width: 720px) {
     .extended-title {
-        display: inline;
+        display: flex;
+        flex-direction: columns;
         font-size: 1.2rem;
         letter-spacing: 0.5rem;
         text-align: center;
@@ -312,7 +313,7 @@ html, body {
        padding: 0;
         display: grid;
         justify-items: left;
-        margin-right: 30px;
+        margin-right: 70px;
         width: 90%;
         height: 150px;
         }
