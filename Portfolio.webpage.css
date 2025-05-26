@@ -315,7 +315,8 @@ html, body {
         margin-left: 0;
         }
      .project-img img {
-         display: block;
+         display: flex;
+         flex-direction: rows;
         width: 90%;
          max-width: 300px;
          height: 150px;
