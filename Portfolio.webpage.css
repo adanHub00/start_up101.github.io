@@ -297,6 +297,10 @@ html, body {
     }
 }
 @media (max-width: 720px) {
+    .project-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .extended-title {
         font-size: 1.2rem;
         letter-spacing: 0.5rem;
