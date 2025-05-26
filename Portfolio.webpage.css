@@ -344,6 +344,8 @@ html, body {
 @media (max-width: 720px) {
     .extended-title {
         font-size: 1.4rem;
+        display: flex;
+        flex-direction: row;
         text-align: center;
         margin: 12px 0;
     }
