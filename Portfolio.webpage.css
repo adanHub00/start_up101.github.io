@@ -347,6 +347,7 @@ html, body {
         display: flex;
         flex-direction: row;
         text-align: center;
+        justify-content: center;
         margin: 12px 0;
     }
     .project-img .container {
@@ -354,7 +355,7 @@ html, body {
         padding: 8px;
         display: grid;
         flex-direction: column;
-        align-item: center;
+        align-items: center;
         width: 100%;
     }
     .project-img img {
