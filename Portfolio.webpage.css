@@ -312,7 +312,7 @@ html, body {
        padding: 0;
         display: grid;
         justify-items: left;
-        margin-left: 0;
+        margin: auto 0;
         width: 90%;
         height: 150px;
         }
