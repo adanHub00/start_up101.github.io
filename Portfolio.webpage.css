@@ -311,7 +311,7 @@ html, body {
        gap: 16px;
        padding: 0;
         display: grid;
-        justify-items: center;
+        justify-items: left;
         margin-left: 0;
         }
      .project-img img {
