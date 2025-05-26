@@ -213,7 +213,9 @@ html, body {
     }
     .project-tile {
         margin-left: 0;
-}
+    }
+}    
+    
 #projects h2 {
     display: none;
     position: absolute;
