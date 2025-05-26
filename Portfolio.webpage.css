@@ -348,6 +348,7 @@ html, body {
         margin: 12px 0;
     }
     .project-img .container {
+        grid-template-columns: repeat(2, 1fr);
         padding: 8px;
         display: flex;
         flex-direction: column;
