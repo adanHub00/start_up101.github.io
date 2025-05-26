@@ -313,6 +313,8 @@ html, body {
         display: grid;
         justify-items: left;
         margin-left: 0;
+        width: 90%;
+        height: 150px;
         }
      .project-img img {
          display: flex;
