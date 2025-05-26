@@ -317,8 +317,9 @@ html, body {
         justify-items: center;
         }
      .project-img img {
-        width: 90vw;
-         max-width: 320px;
+         display: block;
+        width: 90%;
+         max-width: 300px;
          height: 180px;
          object-fit: cover;
          border-radius: 10px;
