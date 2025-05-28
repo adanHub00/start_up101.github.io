@@ -331,17 +331,13 @@ html, body {
         display: none;
     }
 }
-@media (max-width: 720px) {
-    .sidebar {
-        width: 60px;
-    }
-}
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .sidebar {
         width: 40px;
+        position: absolute;
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 600px) {
     .extended-title {
         font-size: 1.4rem;
         display: flex;
